@@ -14,7 +14,7 @@ pipeline {
                 expression { params.REQUESTED_ACTION == 'greeting' }
             }
             steps {
-                echo "Parameter passed : params.REQUESTED_ACTION"
+                echo "Parameter passed : $params.REQUESTED_ACTION"
                 echo "Hello, bitwiseman!"
             }
         }
